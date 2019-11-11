@@ -1,0 +1,36 @@
+body{
+    background: url('../img/red.jpg');
+    background-attachment: fixed;
+}
+
+#logo{
+    background:#c0392b; 
+}
+
+.navigation ul li:hover{
+    background:#c0392b; 
+}
+
+
+.buttom-more{
+    background:#c0392b; 
+}
+
+.buttom-more:hover{
+    background:#e74c3c;
+}
+
+.logout{
+    background:#c0392b; 
+}
+
+.logout:hover{
+    background:#e74c3c;
+}
+.watch{
+    border:5px dashed #c0392b;
+}
+
+.watch:hover{
+    border:5px dashed #e74c3c;
+}

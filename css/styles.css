@@ -1,0 +1,287 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+.global{
+    width:65%;
+    margin: 0px auto;
+    margin-top: 30px;
+    background: white;
+    padding:20px;
+    box-shadow: 0px 0px 2px gray;
+}
+/*Logo*/
+#logo{
+    font-family:sans-serif;
+    font-size:27px;
+    font-weight:bold;
+    border-radius:10px;
+    letter-spacing: 4px;
+    color: white;
+    text-align:center;
+    width: 400px;
+    height:78px;
+    float:left;
+    margin-bottom:20px;
+    line-height:80px;
+    text-transform: uppercase;
+}
+/*Navigation*/
+.navigation{
+    font-family:sans-serif;
+    background:#2d3436;
+    width:100%;
+    text-transform: uppercase;
+    margin-bottom:20px;
+}
+
+.navigation ul{
+    line-height:46px;
+    list-style: none;
+}
+
+.navigation ul li{
+    height:46px;
+    display:inline-block;
+    transition: all 300ms;
+
+}
+
+.navigation ul li a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding-left:30px;
+    padding-right:30px;
+}
+/*Slider*/
+.slider{
+    width:20%
+}
+
+.slider ul li img{
+    width:200px;
+    height:80px;
+}
+/*Posts*/
+.posts{
+    width:60%;
+    float:left;
+    font-family:sans-serif;
+}
+.post{
+    padding:5px;
+}
+
+h2{
+    font-size:25px;
+    color:#2d3436;
+}
+
+.post .date{
+    color:gray;
+    display:block;
+    margin-top:5px;
+}
+
+.post p{
+    margin-top:20px;
+    margin-bottom:20px;
+    line-height:20px;
+    text-align:justify;
+}
+/*Read More*/
+.buttom-more{
+    display:block;
+    width:100px;
+    padding:15px;
+    color: white;
+    text-decoration:none;
+    margin-top:10px;
+    margin-bottom:15px;
+    text-align:center;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+/*Sidebar*/
+.aside{
+    font-family:sans-serif;
+    width:30%;
+    float:right;
+}
+
+.aside h3{
+    margin-top:50px;
+    margin-bottom:20px;
+    text-align:center;
+    line-height: 10px;
+    color: #2d3436;
+    background: url('../img/lines.png') repeat-x;
+}
+
+.aside h3 span{
+    background:white;
+    padding:5px;
+}
+
+.aside img{
+    width:100%;
+}
+
+.aside p{
+    font-size:15px;
+    text-align:justify;
+}
+/*Login*/
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="number"],
+select{
+    padding:5px;
+    border-radius:2px;
+    border: 1px solid black;
+    width:80%;
+    margin-bottom:10px;
+    margin-top:5px;
+    font-family:sans-serif;
+}
+
+form input[type="submit"]{
+    background:#eee;
+    padding:10px;
+    font-family:sans-serif;
+    border:1px solid gray;
+    color:#333;
+    cursor:pointer;
+}
+/*Footer*/
+footer{
+    font-family:sans-serif;
+    color:white;
+    background:rgba(51, 51, 51, 0.70);
+    height:47px;        
+    margin:0px auto;
+    width:65%;
+    padding-left:20px;
+    padding-right:20px;
+    margin-top:50px;
+    line-height:47px;
+}
+
+.bx-wrapper, .bx-viewport{
+    height:250px !Important;
+}
+/*Theme Selector*/
+.selector-theme{
+    position:fixed;
+    top:40%;
+    background: rgba(51, 51, 51, 0.5);
+    width: 50px;
+    height:100px;
+}
+
+#to-green,
+#to-red,
+#to-blue{
+    width:25px;
+    height:30px;
+    border:1px solid white;
+    display:block;
+    margin:0px auto;
+    margin-top: 5px;
+    margin-bottom:5px;
+}
+
+#to-green{
+    background:#16a085; 
+}
+
+#to-red{
+    background:#c0392b; 
+}
+
+#to-blue{
+    background:#60a3bc;
+}
+/*Scroll Up*/
+.up{
+    position:fixed !Important;
+    bottom:30px !Important;
+    right:30px !Important;
+    background:#e84118;
+    padding:20px;
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    color: white;
+}
+/*Logout*/
+.logout{
+    padding:5px;
+    text-decoration:none;
+    width:20px;
+    color: white;
+    text-decoration:none;
+    margin-top:10px;
+    margin-bottom:15px;
+    text-align:center;
+    border-radius:10%;
+}
+/*About Me*/
+.box{
+    width:60%;
+    float:left;
+    margin-top:40px;
+}
+.box h2{
+    font-family:sans-serif;
+    text-align:center;
+}
+
+/*Watch*/
+.watch{
+    font-size:40px;
+    font-weight:bold;
+    font-family:sans-serif;
+    color:#2d3436;
+    width:30%;
+    border:5px dashed black;
+    padding:30px;
+    margin:0px auto;
+    
+}
+/*Contact*/
+.form_contact{
+	width: 50%;
+	margin-top: 15px;
+	font-family: sans-serif;
+}
+
+.form_contact label{
+	display: block;
+	width: 100%;
+	margin-top: 5px;
+}
+
+.form-error{
+    background:#b33939;
+    display:block;
+    color:white;
+    border:2px solid black;
+    border-radius:12px;
+    font-family:sans-serif;
+    font-weight:bold;
+    padding:10px;
+    margin-top:10px;
+
+}

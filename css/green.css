@@ -1,0 +1,36 @@
+body{
+    background: url('../img/blue-pink.jpg');
+    background-attachment: fixed;
+}
+
+#logo{
+    background:#16a085;  
+}
+
+.navigation ul li:hover{
+    background:#16a085;
+}
+
+
+.buttom-more{
+    background:#16a085;
+}
+
+.buttom-more:hover{
+    background:#1abc9c;
+}
+
+.logout{
+    background:#16a085;
+}
+
+.logout:hover{
+    background:#1abc9c;
+}
+.watch{
+    border:5px dashed #16a085;
+}
+
+.watch:hover{
+    border:5px dashed #1abc9c;
+}

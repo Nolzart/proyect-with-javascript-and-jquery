@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Javascript and jQuery</title>
+        <meta charset="utf-8"/>
+
+        <!--Css-->
+        <link  rel="stylesheet" type="text/css" href="css/styles.css">
+        <link  id="theme"rel="stylesheet" type="text/css" href="css/green.css">
+        <!--My Scripts-->
+        
+
+        <!--jQuery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+        <!--bxSlider-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+        <!--Momentjs-->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/en-au.js"></script>
+        <!--Font Awesome-->
+        <script src="https://kit.fontawesome.com/7171b6151e.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        
+        <!--Theme-->
+        <div class="selector-theme">
+            <div id="to-green"></div>
+            <div id="to-red"></div>
+            <div id="to-blue"></div>
+        </div>
+        <section class="global">
+            <div>
+                <header id="logo">
+                    <h1>Practicing JS</h1>
+                </header>
+
+                <div class="clearfix"></div>
+                <!--Menu-->
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="index.html">Start</a></li>
+                        <li><a href="watch.html">Watch</a></li>
+                        <li><a href="about_me.html">About Me</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        <section class="content">
+                <!--Slider-->
+                <div class="slider">
+                    <div><img src="img/hojas.jpg"></div>
+                    <div><img src="img/moon1.jpg"></div>
+                    <div><img src="img/rubik1.jpg"></div>
+                </div>
+                <!--Sidebar-->
+                <div class="posts"></div>
+                <aside class="aside">
+                    <div id="about">
+                        <h3><span>About Me</span></h3>
+                        <img src="img/homero.jpg" alt="Homero Simsomp"/>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere accusantium quod aspernatur quas temporibus enim ipsam dignissimos est expedita dolore?</p>
+                    </div>
+                    <!--Login-->
+                    <div id="login">
+                        <form action="#">
+                            <h3><span>Identify Yourself</span></h3>
+
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" placeholder="Deku"/>
+
+                            <label for="gmail">Gmail</label>
+                            <input type="email" name="gmail" placeholder="deku@gmail.com">
+
+                            <label for="password"> Password</label>
+                            <input type="password" name="password" placeholder="deku123">
+
+                            <input type="submit" name="submit" value="Send">
+
+                        </form>
+                    </div>
+                </aside>
+                <div class="clearfix"></div>
+            </section>
+        </section>
+        <!--Footer-->
+        <footer> 
+            NolzartCorp &copy;
+        </footer>
+        <div class="up">
+                <span classs="fas fa-chevron-up"><i class="fas fa-chevron-up"></i></span>
+            </div>
+            <script src="js/main.js"></script>
+    </body>
+</html>
