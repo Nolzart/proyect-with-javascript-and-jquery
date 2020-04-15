@@ -1,8 +1,5 @@
-'use strict'
-
-
+//'use strict'
     $(document).ready(function(){
-
         //slider
         if(window.location.href.indexOf('index') > -1){
             $('.slider').bxSlider({
@@ -12,6 +9,27 @@
                 responsive: true
             });
         }
+        //Load theme
+        var theme= $('#theme')
+        $(window).on("load",function(){
+            var saveTheme = localStorage.getItem('theme');
+            if(saveTheme){
+                theme.attr('href', saveTheme)
+            } 
+        });        
+        /*Theme Selector*/
+        $('#to-green').click(function(){
+            theme.attr('href', 'css/green.css')
+            localStorage.setItem('theme', 'css/green.css');
+        });
+        $('#to-blue').click(function(){
+            theme.attr('href', 'css/blue.css');
+            localStorage.setItem('theme', 'css/blue.css');
+        });
+        $('#to-red').click(function(){
+            theme.attr('href', 'css/red.css')
+            localStorage.setItem('theme', 'css/red.css');
+        });
         //Ajax
         if(window.location.href.indexOf('index') > -1 ){
             var posts = [
@@ -36,7 +54,7 @@
                 content: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae fuga aspernatur, iste harum aperiam reprehenderit ipsam animi soluta impedit itaque, quod, nostrum autem fugit expedita odio dolorum nihil eos dolore quaerat unde. Quidem autem facilis earum vel ipsum maxime reprehenderit iste iure tempore dolores exercitationem corporis rem asperiores assumenda nostrum vitae aut, iusto voluptas quam nisi sed fugiat cum consequuntur!'
                 }]
                 
-            posts.forEach((item,index)=>{
+            posts.forEach((item,index) => {
                 var post = `
                 <article class="post">
                     <h2>${item.title}</h2>
@@ -48,21 +66,6 @@
                 $('.posts').append(post);
             });
         }
-        /*Theme Selector*/
-
-        var theme= $('#theme')
-        var save_theme= "";
-        $('#to-green').click(function(){
-            theme.attr('href', 'css/green.css')
-        });
-        $('#to-blue').click(function(){
-            theme.attr('href', 'css/blue.css');
-            localStorage.setItem('save-theme', theme.attr('href', 'css/blue.css'))
-        });
-        $('#to-red').click(function(){
-            theme.attr('href', 'css/red.css')
-        });
-
         /*Scroll Up*/
         var up = $('.up');
         up.hide();
@@ -84,9 +87,7 @@
 
         $("#login form").submit(function(){
             var username = $("#name").val();
-    
             localStorage.setItem("username", username);
-    
         });
 
         var username = localStorage.getItem('username')
@@ -100,7 +101,6 @@
                 localStorage.clear();
                 location.reload();
             });
-
         }
         /*About Me */
         if(window.location.href.indexOf('about_me') > -1){

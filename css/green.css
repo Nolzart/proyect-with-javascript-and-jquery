@@ -21,8 +21,7 @@ body{
 
 .buttom-more:hover,
 .submitBtn:hover,
-.logout:hover,
-.watch:hover{
+.logout:hover{
     background:#11998e;
 }
 
