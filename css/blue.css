@@ -1,37 +1,36 @@
 body{
-    background: url('../img/blue2.jpg');
+    background: linear-gradient(to right, #2193b0, #6dd5ed);
     background-attachment: fixed;
 }
 
+.buttom-more,
+.submitBtn,
+.logout{
+    background: #6dd5ed;
+}
+
+.up{
+    background: #2193b0;
+}
+
+.buttom-more:hover,
+.submitBtn:hover,
+.logout:hover{
+    background:#2193b0;
+}
+
 #logo{
-    background:#60a3bc;
+    background:#6dd5ed;
 }
 
 .navigation ul li:hover{
-    background:#60a3bc;
-}
-
-
-.buttom-more{
-    background:#60a3bc;
-}
-
-.buttom-more:hover{
-    background:#82ccdd;
-}
-
-.logout{
-    background:#60a3bc;
-}
-
-.logout:hover{
-    background:#82ccdd;
+    background:#2193b0;
 }
 
 .watch{
-    border:5px dashed #60a3bc;
+    border:5px dashed #6dd5ed;
 }
 
 .watch:hover{
-    border:5px dashed #82ccdd;
+    border:5px dashed #2193b0;
 }

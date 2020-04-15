@@ -1,8 +1,7 @@
 body{
-    background: url('../img/blue-pink.jpg');
+    background: linear-gradient(to right, #11998e, #38ef7d);
     background-attachment: fixed;
 }
-
 #logo{
     background:#16a085;  
 }
@@ -10,27 +9,26 @@ body{
 .navigation ul li:hover{
     background:#16a085;
 }
-
-
-.buttom-more{
-    background:#16a085;
-}
-
-.buttom-more:hover{
-    background:#1abc9c;
-}
-
+.buttom-more,
+.submitBtn,
 .logout{
-    background:#16a085;
+    background: #16a085;
 }
 
-.logout:hover{
-    background:#1abc9c;
+.up{
+    background: #11998e;
 }
+
+.buttom-more:hover,
+.submitBtn:hover,
+.logout:hover,
+.watch:hover{
+    background:#11998e;
+}
+
 .watch{
     border:5px dashed #16a085;
 }
-
 .watch:hover{
-    border:5px dashed #1abc9c;
+    border:5px dashed #11998e;
 }

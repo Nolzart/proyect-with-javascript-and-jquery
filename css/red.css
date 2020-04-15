@@ -1,36 +1,35 @@
 body{
-    background: url('../img/red.jpg');
+    background: linear-gradient(to right, #d31027, #ea384d);
     background-attachment: fixed;
 }
 
+.buttom-more,
+.submitBtn,
+.logout{
+    background: #ea384d;
+}
+.up{
+    background: #d31027;
+}
+
 #logo{
-    background:#c0392b; 
+    background:#ea384d; 
 }
 
 .navigation ul li:hover{
-    background:#c0392b; 
+    background:#d31027; 
 }
 
-
-.buttom-more{
-    background:#c0392b; 
-}
-
-.buttom-more:hover{
-    background:#e74c3c;
-}
-
-.logout{
-    background:#c0392b; 
-}
-
+.buttom-more:hover,
+.submitBtn:hover,
 .logout:hover{
-    background:#e74c3c;
+    background:#d31027;
 }
+
 .watch{
-    border:5px dashed #c0392b;
+    border:5px dashed #ea384d;
 }
 
 .watch:hover{
-    border:5px dashed #e74c3c;
+    border:5px dashed #e74c3c
 }
