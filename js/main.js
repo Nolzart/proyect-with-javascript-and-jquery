@@ -1,4 +1,4 @@
-//'use strict'
+'use strict'
     $(document).ready(function(){
         //slider
         if(window.location.href.indexOf('index') > -1){
@@ -9,27 +9,17 @@
                 responsive: true
             });
         }
-        //Load theme
         var theme= $('#theme')
-        $(window).on("load",function(){
-            var saveTheme = localStorage.getItem('theme');
-            if(saveTheme){
-                theme.attr('href', saveTheme)
-            } 
-        });        
         /*Theme Selector*/
         $('#to-green').click(function(){
             theme.attr('href', 'css/green.css')
-            localStorage.setItem('theme', 'css/green.css');
         });
         $('#to-blue').click(function(){
             theme.attr('href', 'css/blue.css');
-            localStorage.setItem('theme', 'css/blue.css');
         });
         $('#to-red').click(function(){
             theme.attr('href', 'css/red.css')
-            localStorage.setItem('theme', 'css/red.css');
-        });
+        });    
         //Ajax
         if(window.location.href.indexOf('index') > -1 ){
             var posts = [
