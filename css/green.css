@@ -19,6 +19,10 @@ body{
     background: #11998e;
 }
 
+.up:hover{
+    background: #16a085;
+}
+
 .buttom-more:hover,
 .submitBtn:hover,
 .logout:hover{

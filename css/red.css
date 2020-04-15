@@ -11,6 +11,9 @@ body{
 .up{
     background: #d31027;
 }
+.up:hover{
+    background: #ea384d;
+}
 
 #logo{
     background:#ea384d; 

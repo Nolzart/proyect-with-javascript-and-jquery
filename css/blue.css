@@ -5,12 +5,16 @@ body{
 
 .buttom-more,
 .submitBtn,
-.logout{
+.logout
+{
     background: #6dd5ed;
 }
 
 .up{
     background: #2193b0;
+}
+.up:hover{
+    background: #6dd5ed;
 }
 
 .buttom-more:hover,
